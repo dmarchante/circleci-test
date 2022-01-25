@@ -6,9 +6,6 @@ jobs:
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
-    build-macos:
-      macos:
-        xcode: 12.5.1
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
